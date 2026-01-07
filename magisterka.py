@@ -191,7 +191,7 @@ reagowała na to co mówiłem lub robiłem.""".splitlines(),
         minRateDescription="Zdecydowanie się nie zgadzam",
         maxRateDescription="Zdecydowanie się zgadzam",
     ),
-    visibleIf="{group} = 2 or 3",
+    visibleIf="{group}=2 or {group}=3",
     **defaultOptions,
 )
 
