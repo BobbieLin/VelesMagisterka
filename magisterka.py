@@ -106,7 +106,7 @@ instrukcja = vls.page(
     ),
     vls.info(
         "intro_instrukcja",
-        'W tej sekcji Twoim zadaniem będzie udzielenie kreatywnych, nietypowych odpowiedzi na pytanie: "Jak można zastosować ten przedmiot?". Możesz udzielić dowolnej ilości odpowiedzi co do zastosowania każdego z przedmiotów. Nie musisz udzielać odpowiedzi na wszystkie pytania, postaraj się jednak odpowiedzieć na jak najwięcej z nich. \n\nPodczas badania towarzyszyć będzie Ci Miriam, badaczka twórczości. Będzie Cię wspierać, a czasami udzieli Ci wskazówek. <b>Postaraj się nie ignorować Miriam - ma wiele ciekawych rzeczy do powiedzenia.</b>',
+        'W tej sekcji Twoim zadaniem będzie udzielenie kreatywnych, nietypowych odpowiedzi na pytanie: <b>"Jak można zastosować ten przedmiot?"</b>. Możesz udzielić dowolnej ilości odpowiedzi co do zastosowania każdego z przedmiotów. Nie musisz udzielać odpowiedzi na wszystkie pytania, postaraj się jednak odpowiedzieć na jak najwięcej z nich. \n\nPodczas badania towarzyszyć będzie Ci Miriam, badaczka twórczości. Będzie Cię wspierać, a czasami udzieli Ci wskazówek. <b>Postaraj się nie ignorować Miriam - ma wiele ciekawych rzeczy do powiedzenia.</b>',
         visibleIf="{group} = 3",
     ),
 )
