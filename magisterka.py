@@ -149,7 +149,7 @@ for item in AUT_items:
         f"AUT_{item_a}",
         vls.info(
             f"AUT_intro_{item_a}",
-            "<h2>Zadania AUT</h2> Twoim zadaniem w tej sekcji jest wymyślenie od jednego do trzech kreatywnych zastosowań danego przedmiotu. Możesz pomijać przedmioty. Możesz także w dowolnym momencie zakończyć zadanie klikając przycisk Zakończ AUT.",
+            "<h2>Zadania AUT</h2> Twoim zadaniem w tej sekcji jest wymyślenie od jednego do trzech kreatywnych zastosowań danego przedmiotu. Możesz pomijać przedmioty. Po pierwszym przedmiocie możesz zakończyć zadanie klikając przycisk <i>Zakończ AUT</i>.",
         ),
         vls.panel(
             f"panel_AUT_{item_a}",
