@@ -115,8 +115,8 @@ opowiadanie = vls.page(
     "opowiadanie",
     vls.info(
         "opowiadanie",
-        "<h2>Przeczytaj poniższe krótkie opowiadanie o Miriam, po czym przejdź dalej:</h2>"
-        'Miriam dorastała w tętniącym kolorami domu na obrzeżach Lizbony, gdzie poezja i polityka mieszały się z zapachem prażonych kasztanów i dźwiękami starego radia grającego fado. Jej matka prowadziła stare kino studyjne, a jej ojciec był zegarmistrzem. Dzięki rodzicom, Miriam już jako dziecko obserwowała, jak porządek i chaos są dwoma stronami tej samej monety. \n\nGdy dorosła, postanowiła studiować psychologię. Na uczelni szczególnie upodobała sobie psychologię twórczości. Wpadła na pomysł aby wieczorami organizować eksperymentalne, stymulujące kreatywność wydarzenia w kinie matki, na przykład spektakle, w których aktorzy dostawali zadanie zbudowania historii na podstawie losowo wyciągniętych przedmiotów. Dużym powodzeniem cieszyły się wymyślone przez nią "Wieczory Twórczego Ryzyka", gdzie widzowie losowali nieoczywiste tematy, a następnie artyści, naukowcy i zupełnie przypadkowe osoby musiały wspólnie wymyślić i przedstawić improwizowaną prezentację, instalację lub mini-spektakl. Miriam fascynowało, jak umysł tworzy sens z pozornego bezsensu i wysnuła tezę, że twórczość rodzi się z odwagi porzucenia kontroli. \n\nDziś prowadzi badania nad twórczością w warunkach niepewności — w jej laboratorium uczestnicy rozwiązują problemy bez instrukcji, reguł czy czasu. Jej najbardziej znany eksperyment to „5 minut w hałasie”, w którym ochotnicy musieli stworzyć opowieść podczas bombardowania bodźcami (szumami, migającymi światłami, absurdalnymi zadaniami).',
+        "<h2>Przeczytaj poniższe krótkie opowiadanie o Miriam, po czym przejdź dalej:</h2>",
+        'Miriam dorastała w domu na obrzeżach Lizbony, gdzie poezja i polityka mieszały się z zapachem prażonych kasztanów i dźwiękami starego radia. Jej matka prowadziła małe kino studyjne, a jej ojciec był zegarmistrzem. Dzięki tak różnym rodzicom, Miriam już jako dziecko obserwowała, jak porządek i chaos są dwoma stronami tej samej monety. \n\nJako nastolatka, przeprowadziła się wraz z ojcem do Polski, jego ojczyzny, gdzie zdumiały ją różnice kulturowe. Polacy wyrażali siebie zupełnie inaczej niż portugalczycy. To zainspirowało ją do studiowania psychologii, gdzie szczególnie upodobała sobie psychologię twórczości. Okazało się, że wyjątkowo dobrze radzi sobie w środowisku naukowym, a jej praca magisterska zrobiła ogromne wrażenie, pomimo problemów Miriam ze statystyką. Zdecydowała się na doktorat w Portugalii. Tam wpadła na pomysł, aby wieczorami organizować eksperymentalne, stymulujące kreatywność wydarzenia w kinie matki. Były to na przykład spektakle, w których aktorzy dostawali zadanie zbudowania historii na podstawie losowo wyciągniętych przedmiotów. Dużym powodzeniem cieszyły się wymyślone przez nią "Wieczory Twórczego Ryzyka", gdzie widzowie losowali nieoczywiste tematy, a następnie uczestnicy musieli wspólnie wymyślić i przedstawić improwizowany mini-spektakl. Miriam fascynowało, jak umysł tworzy sens z pozornego bezsensu i wysnuła tezę, że twórczość rodzi się z odwagi porzucenia kontroli. \n\nDziś kontynuuje badania nad twórczością, a jedno z nich za chwilę będziesz wypełniać Ty.',
     ),
     visibleIf="{group} = 3",
 )
@@ -339,6 +339,7 @@ vls.survey(
     wstęp,
     metryczka,
     instrukcja,
+    opowiadanie,
     AUT_pages,
     epsi,
     mmpr,
