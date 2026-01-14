@@ -1,3 +1,5 @@
+import os
+import shutil
 import velesresearch as vls
 import anyascii
 
@@ -157,6 +159,7 @@ for item in AUT_items:
                 f"img_{item_a}",
                 f"https://bobbielin.github.io/VelesMagisterka/images/{item_a}.png",
                 visibleIf="{group}=2 or {group}=3",
+                maxWidth="400px",
             ),
             vls.multipleText(
                 f"AUT_{item_a}",
@@ -334,6 +337,8 @@ mmpr = vls.page(
     ),
 )
 
+if os.path.exists("./survey/src"):
+    shutil.copyfile("./index.css", "./survey/src/index.css")
 
 vls.survey(
     wstęp,
