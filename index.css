@@ -1,0 +1,49 @@
+.sd-page.sd-body__page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 400px) {
+  .sd-body {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+}
+
+.sd-row.sd-clearfix.sd-page__row {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.sd-timer.sd-timer--bottom {
+  z-index: 10000;
+}
+
+.sd-table__cell {
+  width: 100%;
+}
+
+.sd-table--columnsautowidth .sd-table__cell--row-text {
+  width: 60%;
+}
+
+.sd-table__cell--row-text {
+  color: rgba(0, 0, 0, 1) !important;
+  font-weight: bold;
+}
+
+/* Center rating items */
+.sd-scrollable-container:not(.sd-scrollable-container--compact) {
+  width: max-content;
+  overflow: visible;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Make buttons not transparent while time minimum countdown is active */
+/* despite the buttons being disabled */
+.override-opacity-for-time-minimum {
+  --sjs-primary-forecolor-light: var(--sjs-primary-forecolor);
+  opacity: 1 !important;
+}

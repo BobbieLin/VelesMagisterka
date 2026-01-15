@@ -1,3 +1,5 @@
+import os
+import shutil
 import velesresearch as vls
 import anyascii
 
@@ -23,7 +25,7 @@ wstęp = vls.page(
     ),
     vls.info(
         "intro",
-        "Dzień dobry, mam na imię Julia i jestem studentką V roku psychologii na Uniwersytecie Wrocławskim. \n\nPoniższy kwestionariusz powstał na potrzebę przeprowadzenia badania magisterskiego dotyczącego czynników wpływających na kreatywność. Nie jest to arkusz diagnostyczny, wyniki będą analizowane zbiorczo i nie świadczą o rzeczywistym poziomie kreatywności występującej u osoby wypełniającej badanie. \n\nAnkieta skierowana jest wyłącznie do <b>osób pełnoletnich.</b> Udział w badaniu jest w pełni <b>anonimowy</b> i <b>dobrowolny,</b> co oznacza, że <b>możliwa jest rezygnacja w dowolnym momencie,</b> a pozyskane dane zostaną wykorzystane tylko w celach naukowych. Czas potrzebny na wypełnienie kwestionariusza wynosi od 5 do 25 minut, w zależności od udzielonych odpowiedzi i losowo przypisanej grupy. \n\n<b>W przypadku rozwiązywania badania na telefonie</b> zachęcam do obrócenia urządzania do pozycji poziomej, ułatwi to odczytywanie zadań.  \n\nW razie pytań odnośnie badania proszę o kontakt pod adresem mailowym: 329808@uwr.edu.pl \n\nSerdecznie dziękuję za poświęcony czas!",
+        "Dzień dobry, mam na imię Julia i jestem studentką V roku psychologii na Uniwersytecie Wrocławskim. \n\nPoniższy kwestionariusz powstał na potrzebę przeprowadzenia badania magisterskiego dotyczącego czynników wpływających na kreatywność. Nie jest to arkusz diagnostyczny, wyniki będą analizowane zbiorczo i nie świadczą o rzeczywistym poziomie kreatywności występującej u osoby wypełniającej badanie. \n\nAnkieta skierowana jest wyłącznie do <b>osób pełnoletnich.</b> Udział w badaniu jest w pełni <b>anonimowy</b> i <b>dobrowolny,</b> co oznacza, że <b>możliwa jest rezygnacja w dowolnym momencie,</b> a pozyskane dane zostaną wykorzystane tylko w celach naukowych. Czas potrzebny na wypełnienie kwestionariusza wynosi od 5 do 25 minut, w zależności od udzielonych odpowiedzi i losowo przypisanej grupy. \n\n<b>W przypadku rozwiązywania badania na telefonie</b> zachęcam do obrócenia urządzania do pozycji poziomej, ułatwi to odczytywanie zadań.  \n\nW razie pytań odnośnie badania proszę o kontakt pod adresem mailowym: <a href='mailto:329808@uwr.edu.pl'>329808@uwr.edu.pl</a> \n\nSerdecznie dziękuję za poświęcony czas!",
     ),
     vls.consent(
         "Wyrażam świadomą zgodę na udział w badaniu i zaświadczam, że jestem osobą pełnoletnią.",
@@ -149,7 +151,7 @@ for item in AUT_items:
         f"AUT_{item_a}",
         vls.info(
             f"AUT_intro_{item_a}",
-            "<h2>Zadania AUT</h2> Twoim zadaniem w tej sekcji jest wymyślenie od jednego do trzech kreatywnych zastosowań danego przedmiotu. Możesz pomijać przedmioty. Możesz także w dowolnym momencie zakończyć zadanie klikając przycisk Zakończ AUT.",
+            "<h2>Zadania AUT</h2> Twoim zadaniem w tej sekcji jest wymyślenie od jednego do trzech kreatywnych zastosowań danego przedmiotu. Możesz pomijać przedmioty. Po pierwszym przedmiocie możesz zakończyć zadanie klikając przycisk <i>Zakończ AUT</i>.",
         ),
         vls.panel(
             f"panel_AUT_{item_a}",
@@ -157,6 +159,7 @@ for item in AUT_items:
                 f"img_{item_a}",
                 f"https://bobbielin.github.io/VelesMagisterka/images/{item_a}.png",
                 visibleIf="{group}=2 or {group}=3",
+                maxWidth="400px",
             ),
             vls.multipleText(
                 f"AUT_{item_a}",
@@ -334,6 +337,8 @@ mmpr = vls.page(
     ),
 )
 
+if os.path.exists("./survey/src"):
+    shutil.copyfile("./index.css", "./survey/src/index.css")
 
 vls.survey(
     wstęp,
