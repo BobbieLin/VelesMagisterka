@@ -194,9 +194,9 @@ reagowała na to co mówiłem lub robiłem.""".splitlines(),
         rateMax=7,
         minRateDescription="Zdecydowanie się nie zgadzam",
         maxRateDescription="Zdecydowanie się zgadzam",
+        **defaultOptions,
     ),
     visibleIf="{group}=2 or {group}=3",
-    **defaultOptions,
 )
 
 
@@ -234,8 +234,8 @@ Zdarza się, że posty osoby medialnej przyczyniają się do tego, że w jakiś 
         rateMin=1,
         minRateDescription="Zdecydowanie się nie zgadzam",
         maxRateDescription="Zdecydowanie się zgadzam",
+        **defaultOptions,
     ),
-    **defaultOptions,
 )
 
 if os.path.exists("./survey/src"):
